@@ -2,16 +2,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.awt.*;
-import java.util.Map;
 
 import static org.junit.Assert.*;
+
 
 public class test1 {
     private Car saab;
     Saab95 saab123 = new Saab95(4, Color.black,124);
     Volvo240 volvon = new Volvo240(4,Color.BLUE,130);
     Scania lastbilen = new Scania(2,Color.CYAN,422);
-    CarTransport transport = new CarTransport(2,Color.gray,500,4);
+    CarTransport transport = new CarTransport(2,Color.gray,500,4,1,1);
 
     @Before
 
@@ -21,27 +21,43 @@ public class test1 {
 
     }
     @Test
-    public void canWeLoadoff(){
-        transport.addToloadedCars(1,saab123);
-        transport.addToloadedCars(2,volvon);
-        transport.addToloadedCars(3,transport);
+    public void maxCars(){
         transport.setRampDown();
-        System.out.println();
-       // transport.lastaAvAllaBilar();
-        transport.lastaAvAllaBilar();
-        System.out.println(transport.toString(3));
-       // System.out.println(transport.toString(2));
+        for(int i=0; i<5;i++){
+           transport.addLoadedCars(new Car(4,Color.BLUE,130));
+        }
+        assertThrows(IllegalArgumentException.class, () -> transport.addLoadedCars(transport));
+
 
     }
     @Test
-    public void areCarsNearby(){
+    public void canNotLoadTruck(){
+        assertThrows(IllegalArgumentException.class, () -> transport.addLoadedCars(transport));
+
+    }
+    //Testar transport i metoden över
+    @Test
+    public void canWeLoadoff(){
+        transport.setRampDown();
+        transport.addLoadedCars(saab123);
+        transport.addLoadedCars(volvon);
+        transport.lastaAvAllaBilar();
+        assertTrue(transport.getNrLoadedCars()==0);
+
+
+    }
+
+    //default värdet på x och y ifrån Car klassen där x=0,y=0
+    @Test
+    public void areCarsNotNearby(){
         transport.setY(50);
         transport.setX(20);
-        transport.addToloadedCars(1,saab123);
-        transport.addToloadedCars(2,volvon);
-        System.out.println(transport.toString(1));
-        System.out.println(transport.toString(2));
+        transport.setRampDown();
+        assertThrows(IllegalArgumentException.class, () -> transport.addLoadedCars(saab123));
+
     }
+
+
     @Test
     public void doesTruckInheritRightMethod(){
         lastbilen.setAngleTrBed(0);
@@ -55,25 +71,23 @@ public class test1 {
     }
    @Test
     public void addingCarstotransport(){
-        transport.addToloadedCars(1,saab123);
-        transport.addToloadedCars(2,volvon);
-        transport.addToloadedCars(3,lastbilen);
-        System.out.println(transport.toString(1));
-        System.out.println(transport.toString(2));
-       System.out.println(transport.toString(3));
+        transport.setRampDown();
+        transport.addLoadedCars(saab123);
+        transport.addLoadedCars(volvon);
+        System.out.println(transport.getNrLoadedCars());
+        assertTrue(transport.getNrLoadedCars()==2);
     }
 
 
-    @Test
-    public  void moveTruckWhenAngNotzero(){
+    @Test//när den börjar röra sig
+    public  void moveTruckWhenAngNotZero(){
        lastbilen.setAngleTrBed(50);
-       lastbilen.move();
+       assertThrows(IllegalArgumentException.class, ()-> lastbilen.move());
     }
-    @Test
+    @Test//när den rör sig
     public  void changingTrBedAngWhileMoving(){
         lastbilen.setCurrentSpeed(5);
-        lastbilen.setAngleTrBed(72);
-        System.out.println(lastbilen.getAngleTrBed());
+        assertThrows(IllegalArgumentException.class, ()-> lastbilen.setAngleTrBed(72));
     }
     @Test
     public void volvospeedfactor() {
@@ -123,7 +137,7 @@ public class test1 {
         assertTrue(saab.getEnginePower()>=0);
     }
     @Test
-    public void testadorrar (){
+    public void testDoors (){
         assertTrue(saab123.getNrDoors()==4);
     }
     @Test public void turnRightOk(){
@@ -132,7 +146,7 @@ public class test1 {
         assertEquals(saab.getCurrentdirection(),"east");
     }
     @Test
-    public void Testspeednegative(){
+    public void testSpeedNegative(){
 
         assertThrows(IllegalArgumentException.class, () -> saab.setCurrentSpeed(-50)); /// hur man testar throws
     }
@@ -248,26 +262,5 @@ public class test1 {
         assertTrue(saab.getCurrentSpeed()==0.1);
 
     }
-
-    /*@Test
-    public void testSpeedFactorSaabOK(){
-        double noTurbo = saab.speedFactor();
-        saab.setTurboOn();
-        double withTurbo = saab.speedFactor();
-        int vad = Double.compare(noTurbo, withTurbo);
-        assertTrue(vad<0);
-    }
-    @Test
-    public void testSpeedFactor(){
-    }
-    /*@Test
-    public void testTurbOonOnOK(){
-        saab.turboOn;
-        assertTrue(saab.setTurboOn());
-    }
-    @Test
-    public void testTurbOonOffOK(){}*/
-
-
 
 }
