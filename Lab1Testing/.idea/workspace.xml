@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="15650b58-f3b2-446a-9b6e-1b134ad8f0c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Test/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lab1Testing/test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab1Testing/test1.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kQN2aM2KmeBlMhS5UwCGGpTKpy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.test1.sameCoordinate">
+    <configuration name="test1.addingCarstotransport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test1" />
+      <option name="METHOD_NAME" value="addingCarstotransport" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.areCarsNotNearby" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test1" />
+      <option name="METHOD_NAME" value="areCarsNotNearby" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.canWeLoadoff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test1" />
+      <option name="METHOD_NAME" value="canWeLoadoff" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.maxCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test1" />
+      <option name="METHOD_NAME" value="maxCars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.sameCoordinate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test1" />
+      <option name="METHOD_NAME" value="sameCoordinate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test1.sameCoordinate" />
+        <item itemvalue="JUnit.test1.maxCars" />
+        <item itemvalue="JUnit.test1.addingCarstotransport" />
+        <item itemvalue="JUnit.test1.areCarsNotNearby" />
+        <item itemvalue="JUnit.test1.canWeLoadoff" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15650b58-f3b2-446a-9b6e-1b134ad8f0c0" name="Default Changelist" comment="" />
+      <created>1605628648521</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605628648521</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="766" height="304" key="GridCell.Tab.0.bottom" timestamp="1605691014917">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605685983006" />
+    <state width="766" height="304" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1605691014917" />
+    <state width="766" height="304" key="GridCell.Tab.0.center" timestamp="1605691014916">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605685983004" />
+    <state width="766" height="304" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1605691014916" />
+    <state width="766" height="304" key="GridCell.Tab.0.left" timestamp="1605691014913">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605685983002" />
+    <state width="766" height="304" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1605691014913" />
+    <state width="766" height="304" key="GridCell.Tab.0.right" timestamp="1605691014917">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605685983005" />
+    <state width="766" height="304" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1605691014917" />
+    <state width="766" height="304" key="GridCell.Tab.1.bottom" timestamp="1605691014923">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605642825779" />
+    <state width="766" height="304" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1605691014923" />
+    <state width="766" height="304" key="GridCell.Tab.1.center" timestamp="1605691014920">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605642825772" />
+    <state width="766" height="304" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1605691014920" />
+    <state width="766" height="304" key="GridCell.Tab.1.left" timestamp="1605691014919">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605642825771" />
+    <state width="766" height="304" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1605691014919" />
+    <state width="766" height="304" key="GridCell.Tab.1.right" timestamp="1605691014921">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="766" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605642825777" />
+    <state width="766" height="304" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1605691014921" />
+    <state x="416" y="31" key="SettingsEditor" timestamp="1605631533500">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="416" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605631533500" />
+    <state x="657" y="349" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605630585197">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="657" y="349" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1605630585197" />
+  </component>
+</project>
