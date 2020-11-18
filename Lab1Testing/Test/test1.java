@@ -12,6 +12,7 @@ public class test1 {
     Volvo240 volvon = new Volvo240(4,Color.BLUE,130);
     Scania lastbilen = new Scania(2,Color.CYAN,422);
     CarTransport transport = new CarTransport(2,Color.gray,500,4,1,1);
+    BrandWorkshop volvofixer = new BrandWorkshop(3,"Volvo240");
 
     @Before
 
@@ -21,7 +22,15 @@ public class test1 {
 
 
     }
+    @Test
+    public void isBrandWorkshopWorking(){
+        for(int i = 1; i<4;i++) {
+            volvofixer.addCar(i, volvon);
+            System.out.println(volvofixer.getCarsInWorkshop().size());
+        }
+        volvofixer.removeCar(1);
 
+    }
     @Test
     public void checkCoordWhileMoving(){
 
