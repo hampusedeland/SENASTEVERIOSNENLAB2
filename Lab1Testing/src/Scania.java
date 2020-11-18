@@ -1,6 +1,21 @@
 import java.awt.*;
 
 public class Scania extends Car{
+    /**
+     * En konstruktor för Scania lastbil generellt med undernämnda parametrar
+     *
+     * @param nrDoors
+     * @param color
+     * @param enginePower
+     */
+    protected Scania(int nrDoors, Color color, double enginePower) {
+        super(nrDoors, color, enginePower);
+        modelName = "Scania340";
+    }
+    /**default vnikel
+     */
+    private double angleTrBed=0;
+
     public double getAngleTrBed() {
         return angleTrBed;
     }
@@ -23,20 +38,4 @@ public class Scania extends Car{
             throw new IllegalArgumentException("For the truck to move, the truck bed must have a zero angle, the angle (was:"+ getAngleTrBed() + ")");
         }
     }
-
-    private double angleTrBed=0; /** default vinkeln*/
-
-
-    /**
-     * En konstruktor för Scania lastbil generellt med undernämnda parametrar
-     *
-     * @param nrDoors
-     * @param color
-     * @param enginePower
-     */
-    protected Scania(int nrDoors, Color color, double enginePower) {
-        super(nrDoors, color, enginePower);
-        modelName = "Scania340";
-    }
-
 }
