@@ -32,11 +32,12 @@ public class CarTransport extends Scania {
         setRampDown();
         if(Math.abs(getX()-bil.getX())<=3 && Math.abs(getY()-bil.getY())<=3) {//bilen rimligt nära biltransporten
             if(!(bil instanceof Scania)) { //kanske vi ska hitta ett sätt att inte ladda på en cartransport på en cartransport
-                //men problemet är då att då kan vi inte lasta på någon långtradare
-                if (getAngleTrBed()==70) { //rampen måste vara nere
-                    loadedcars.add(bil);
-                    bil.setX(this.getX());
-                    bil.setY(this.getY());
+                if(!loadedcars.contains(bil)) {//men problemet är då att då kan vi inte lasta på någon långtradare
+                    if (getAngleTrBed() == 70) { //rampen måste vara nere
+                        loadedcars.add(bil);
+                        bil.setX(this.getX());
+                        bil.setY(this.getY());
+                    }
                 }
             }else{
                 throw new IllegalFormatFlagsException("Make sure you are not loading a truck");

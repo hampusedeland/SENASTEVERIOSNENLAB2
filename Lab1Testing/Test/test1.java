@@ -22,6 +22,26 @@ public class test1 {
 
 
     }
+
+    @Test
+    public void testWorkshopCarBrand(){
+        OrdinaryWorkshop<Car> workish = new OrdinaryWorkshop<>(6);
+        workish.addToloadedCars(saab123);
+        workish.addToloadedCars(volvon);
+        workish.addToloadedCars(volvon);
+        OrdinaryWorkshop<Saab95> workshop = new OrdinaryWorkshop<>(4);
+        workshop.addToloadedCars(saab123);
+        assertTrue(workshop.removeFromLoadedCars()=="Saab95");
+    }
+
+    @Test
+    public void testWorkshopCarAllBrands(){
+        OrdinaryWorkshop<Car> workshop = new OrdinaryWorkshop<>(4);
+        workshop.addToloadedCars(saab);
+        workshop.addToloadedCars(saab123);
+        workshop.addToloadedCars(volvon);
+        assertTrue(workshop.getNumberOfLoadedCars()==3);
+    }
     @Test
     public void isBrandWorkshopWorking(){
         for(int i = 1; i<4;i++) {
